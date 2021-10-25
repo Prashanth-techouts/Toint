@@ -1,10 +1,8 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 22-Oct-2021, 11:31:27 AM                    ---
+ * --- Generated at 22-Oct-2021, 6:19:15 PM                     ---
  * ----------------------------------------------------------------
- *  
- * Copyright (c) 2021 SAP SE or an SAP affiliate company. All rights reserved.
  */
 package org.toint.core.jalo;
 
@@ -12,11 +10,11 @@ import de.hybris.platform.jalo.Item.AttributeMode;
 import de.hybris.platform.jalo.SessionContext;
 import de.hybris.platform.jalo.enumeration.EnumerationValue;
 import de.hybris.platform.jalo.product.Product;
-import org.toint.core.constants.TointCoreConstants;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.toint.core.constants.TointCoreConstants;
 
 /**
  * Generated class for type {@link org.toint.core.jalo.ApparelProduct ApparelProduct}.

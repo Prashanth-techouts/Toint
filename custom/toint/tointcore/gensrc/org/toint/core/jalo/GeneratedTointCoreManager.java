@@ -1,10 +1,8 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 22-Oct-2021, 11:31:27 AM                    ---
+ * --- Generated at 22-Oct-2021, 6:19:15 PM                     ---
  * ----------------------------------------------------------------
- *  
- * Copyright (c) 2021 SAP SE or an SAP affiliate company. All rights reserved.
  */
 package org.toint.core.jalo;
 
@@ -16,13 +14,13 @@ import de.hybris.platform.jalo.SessionContext;
 import de.hybris.platform.jalo.extension.Extension;
 import de.hybris.platform.jalo.type.ComposedType;
 import de.hybris.platform.jalo.type.JaloGenericCreationException;
+import java.util.HashMap;
+import java.util.Map;
 import org.toint.core.constants.TointCoreConstants;
 import org.toint.core.jalo.ApparelProduct;
 import org.toint.core.jalo.ApparelSizeVariantProduct;
 import org.toint.core.jalo.ApparelStyleVariantProduct;
 import org.toint.core.jalo.ElectronicsColorVariantProduct;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Generated class for type <code>TointCoreManager</code>.

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application xmlns="http://www.zeroturnaround.com">
   <classpath>
-    <dir name="D:\2005\hybris\bin\modules\base-accelerator\tointbackoffice/backoffice/classes" />
+    <dir name="C:\Users\D1\Downloads\hybris-commerce-suite-2005.9\hybris\bin\custom\toint\tointbackoffice/backoffice/classes" />
   </classpath>
 </application>

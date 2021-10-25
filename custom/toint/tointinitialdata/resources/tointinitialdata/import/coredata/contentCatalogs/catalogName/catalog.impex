@@ -4,8 +4,8 @@
 #
 # Import the Content Catalog
 #
-$contentCatalog=__CONTENT_CATALOG_NAME__
-$languages=ja,en,de,zh
+$contentCatalog=Toint_ContentCatalog
+$languages=en
 
 # Content catalog for CMS contents
 INSERT_UPDATE ContentCatalog;id[unique=true]

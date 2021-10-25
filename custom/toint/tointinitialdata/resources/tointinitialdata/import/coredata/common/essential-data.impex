@@ -17,19 +17,31 @@
 # * Tax & Tax Groups
 # * Jobs
 
-# Languages
-INSERT_UPDATE Language;isocode[unique=true];fallbackLanguages(isocode);active[default=true]
-;en;;;
-;de;en;;
-;ja;en;;
-;zh;en;;
+$lang=en
 
-# Currencies
-INSERT_UPDATE Currency;isocode[unique=true];conversion;digits;symbol
-;GBP;1;2;£
-;EUR;1;2;€
-;USD;1,4;2;$
-;JPY;120;0;¥
+# Languages
+UPDATE Language;isocode[unique=true];name[lang=$lang];fallbackLanguages(isocode);active[default=true]
+ ;de;"German";en;;
+ ;en;"English";;;
+ ;ja;"Japanese";en;;
+ ;zh;"Chinese";en;;
+ 
+ # Currencies
+ INSERT_UPDATE Currency;isocode[unique=true];conversion;digits;symbol;name[lang=$lang]
+;GBP;1;2;£;"Pound"
+;EUR;1;2;€;"Euro"
+;USD;1,4;2;$;"US Dollar"
+;JPY;120;0;¥;"Japanese Yen"
+;INR;1;2;₹;"Indian Rupee"
+
+# Titles
+UPDATE Title;code[unique=true];name[lang=$lang]
+ ;dr;"Dr."
+ ;miss;"Miss"
+ ;mr;"Mr."
+ ;mrs;"Mrs."
+ ;ms;"Ms."
+ ;rev;"Rev."
 
 # SiteMap Language Currencies
 INSERT_UPDATE SiteMapLanguageCurrency;&siteMapLanguageCurrency;language(isoCode)[unique=true];currency(isocode)[unique=true];
@@ -37,6 +49,7 @@ INSERT_UPDATE SiteMapLanguageCurrency;&siteMapLanguageCurrency;language(isoCode)
 ;enJpy;en;JPY
 ;enGbp;en;GBP
 ;enEur;en;EUR
+;enInr;en;INR
 ;jaUsd;ja;USD
 ;jaJpy;ja;JPY
 ;jaGbp;ja;GBP
@@ -62,58 +75,85 @@ INSERT_UPDATE Warehouse;code[unique=true];name;vendor(code)[default=default];def
 ;warehouse_w;Warehouse West;
 ;warehouse_n;Warehouse North;
 
+
 # Disable preview for email pages
 UPDATE CMSPageType;code[unique=true];previewDisabled
 ;EmailPage;true
 
-# Titles
-INSERT_UPDATE Title;code[unique=true]
-;mr
-;mrs
-;miss
-;ms
-;dr
-;rev
+# Credit / Debit Cards
+UPDATE CreditCardType;code[unique=true];name[lang=$lang]
+ ;amex;"American Express"
+ ;diners;"Diner's Club"
+ ;maestro;"Maestro"
+ ;master;"Mastercard"
+ ;mastercard_eurocard;"Mastercard/Eurocard"
+ ;switch;"Switch"
+ ;visa;"Visa"
 
-# Media Folders
+# DistanceUnits for Storelocator 
+UPDATE DistanceUnit;code[unique=true];name[lang=$lang]
+ ;km;"km"
+ ;miles;"miles"
+
+ # Media Folders
 INSERT_UPDATE MediaFolder;qualifier[unique=true];path[unique=true]
 ;images;images
 ;email-body;email-body
 ;email-attachments;email-attachments
 
-# Media formats
-INSERT_UPDATE MediaFormat;qualifier[unique=true]
-;1200Wx1200H
-;515Wx515H
-;365Wx246H
-;300Wx300H
-;96Wx96H
-;65Wx65H
-;30Wx30H
+# MediaFormats
+UPDATE MediaFormat;qualifier[unique=true];name[lang=$lang];
+ ;1200Wx1200H;"1200Wx1200H"
+ ;300Wx300H;"300Wx300H"
+ ;30Wx30H;"30Wx30H"
+ ;365Wx246H;"365Wx246H"
+ ;515Wx515H;"515Wx515H"
+ ;65Wx65H;"65Wx65H"
+ ;96Wx96H;"96Wx96H"
+ 
+# Consginment statuses
+UPDATE ConsignmentStatus;code[unique=true];name[lang=$lang]
+ ;CANCELLED;"Cancelled"
+ ;PICKPACK;"Pickpack"
+ ;PICKUP_COMPLETE;"Pickup complete"
+ ;READY;"Ready"
+ ;READY_FOR_PICKUP;"Ready for pickup"
+ ;SHIPPED;"Shipped"
+ ;WAITING;"Waiting"
 
-# Tax & Tax Groups
-INSERT_UPDATE UserTaxGroup;code[unique=true]
-;de-taxes
-;jp-taxes
-;uk-taxes
-;us-taxes
-;ca-taxes
+# Tax
+INSERT_UPDATE Tax;code[unique=true];value;currency(isocode);name[lang=$lang]
+;de-vat-full;19;;"DE VAT full"
+;de-vat-half;7;;"DE VAT half"
+;jp-vat-full;5;;"Consumption Tax"
+;uk-vat-full;20;;"UK VAT full"
+;uk-vat-half;5;;"UK VAT half"
+;us-sales-tax-full;0;;"Sales Tax"
+;ca-sales-tax-full;0;;"Sales Tax"
+;in-sales-tax-full;0;;"Sales Tax"
+;in-vat-full;0;;"IN VAT full"
+;in-vat-half;0;;"IN VAT half"
 
-INSERT_UPDATE ProductTaxGroup;code[unique=true]
-;jp-vat-full
-;eu-vat-full
-;eu-vat-half
-;us-sales-tax-full
-;ca-sales-tax-full
+$lang=en
+# Product Tax Groups
+INSERT_UPDATE ProductTaxGroup;code[unique=true];name[lang=$lang]
+ ;ca-sales-tax-full;"CA Sales Tax"
+ ;eu-vat-full;"EU Full Tax rate"
+ ;eu-vat-half;"EU Half Tax rate"
+ ;jp-vat-full;"JP Consumption Tax"
+ ;us-sales-tax-full;"US Sales Tax"
+ ;in-sales-tax-full;"IN Sales Tax"
+ ;in-vat-full;"IN Full Tax rate"
+ ;in-vat-half;"IN Half Tax rate"
 
-INSERT_UPDATE Tax;code[unique=true];value;currency(isocode)
-;de-vat-full;19
-;de-vat-half;7
-;jp-vat-full;5
-;uk-vat-full;20
-;uk-vat-half;5
-;us-sales-tax-full;0
-;ca-sales-tax-full;0
+# User Tax Groups
+INSERT_UPDATE UserTaxGroup;code[unique=true];name[lang=$lang]
+ ;ca-taxes;"CA Taxes"
+ ;de-taxes;"DE Taxes"
+ ;jp-taxes;"JP Taxes"
+ ;uk-taxes;"UK Taxes"
+ ;us-taxes;"US Taxes"
+ ;in-taxes;"IN Taxes"
 
 INSERT_UPDATE ServicelayerJob;code[unique=true];springId[unique=true]
 ;cartRemovalJob;cartRemovalJob
