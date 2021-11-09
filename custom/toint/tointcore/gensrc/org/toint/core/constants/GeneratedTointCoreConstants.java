@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 28-Oct-2021, 5:29:34 PM                     ---
+ * --- Generated at 08-Nov-2021, 10:38:55 AM                    ---
  * ----------------------------------------------------------------
  */
 package org.toint.core.constants;
@@ -21,6 +21,9 @@ public class GeneratedTointCoreConstants
 		public static final String APPARELSTYLEVARIANTPRODUCT = "ApparelStyleVariantProduct".intern();
 		public static final String ELECTRONICSCOLORVARIANTPRODUCT = "ElectronicsColorVariantProduct".intern();
 		public static final String SWATCHCOLORENUM = "SwatchColorEnum".intern();
+		public static final String TOINTPRODUCT = "TointProduct".intern();
+		public static final String TOINTSIZEVARIANTPRODUCT = "TointSizeVariantProduct".intern();
+		public static final String TOINTSTYLEVARIANTPRODUCT = "TointStyleVariantProduct".intern();
 	}
 	public static class Attributes
 	{

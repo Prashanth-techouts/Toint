@@ -86,6 +86,65 @@
                 </attributes>
             </itemtype>
         </typegroup>
+        
+         <typegroup name="Toint">
+            <itemtype code="TointProduct" extends="Product"
+                      autocreate="true" generate="true"
+                      jaloclass="org.toint.core.jalo.TointProduct">
+                <description>Base Toint product extension that contains additional attributes.</description>
+                <attributes>
+                    <attribute qualifier="genders" type="GenderList">
+                        <description>List of genders that the ApparelProduct is designed for</description>
+                        <modifiers/>
+                        <persistence type="property"/>
+                    </attribute>
+                     <attribute qualifier="countryOrigin" type="java.lang.String">
+                        <description>product country origin</description>
+                        <modifiers/>
+                        <persistence type="property"/>
+                    </attribute>
+
+                </attributes>
+            </itemtype>
+
+            <itemtype code="TointStyleVariantProduct" extends="VariantProduct"
+                      autocreate="true" generate="true"
+                      jaloclass="org.toint.core.jalo.TointStyleVariantProduct">
+                <description>Toint style variant type that contains additional attribute describing variant style.
+                </description>
+                <attributes>
+                    <attribute qualifier="style" type="java.lang.String"
+                               metatype="VariantAttributeDescriptor">
+                        <description>Color/Pattern of the product.</description>
+                        <modifiers/>
+                        <persistence type="property"/>
+                    </attribute>
+
+                    <attribute qualifier="swatchColors" type="SwatchColorSet">
+                        <description>A normalized color mapping to a standardized front-end navigable name.
+                        </description>
+                        <modifiers/>
+                        <persistence type="property"/>
+                    </attribute>
+                </attributes>
+
+            </itemtype>
+
+            <itemtype code="TointSizeVariantProduct" extends="TointStyleVariantProduct"
+                      autocreate="true" generate="true"
+                      jaloclass="org.toint.core.jalo.TointSizeVariantProduct">
+                <description>Apparel size variant type that contains additional attribute describing variant size.
+                </description>
+                <attributes>
+                    <attribute qualifier="size" type="java.lang.String"
+                               metatype="VariantAttributeDescriptor">
+                        <description>Size of the product.</description>
+                        <modifiers/>
+                        <persistence type="property"/>
+                    </attribute>
+                </attributes>
+            </itemtype>
+        </typegroup>
 
         <typegroup name="Electronics">
             <itemtype code="ElectronicsColorVariantProduct" extends="VariantProduct"

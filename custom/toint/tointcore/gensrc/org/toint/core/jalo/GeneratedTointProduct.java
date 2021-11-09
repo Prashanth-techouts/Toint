@@ -17,18 +17,21 @@ import java.util.Map;
 import org.toint.core.constants.TointCoreConstants;
 
 /**
- * Generated class for type {@link org.toint.core.jalo.ApparelProduct ApparelProduct}.
+ * Generated class for type {@link org.toint.core.jalo.TointProduct TointProduct}.
  */
 @SuppressWarnings({"deprecation","unused","cast"})
-public abstract class GeneratedApparelProduct extends Product
+public abstract class GeneratedTointProduct extends Product
 {
-	/** Qualifier of the <code>ApparelProduct.genders</code> attribute **/
+	/** Qualifier of the <code>TointProduct.genders</code> attribute **/
 	public static final String GENDERS = "genders";
+	/** Qualifier of the <code>TointProduct.countryOrigin</code> attribute **/
+	public static final String COUNTRYORIGIN = "countryOrigin";
 	protected static final Map<String, AttributeMode> DEFAULT_INITIAL_ATTRIBUTES;
 	static
 	{
 		final Map<String, AttributeMode> tmp = new HashMap<String, AttributeMode>(Product.DEFAULT_INITIAL_ATTRIBUTES);
 		tmp.put(GENDERS, AttributeMode.INITIAL);
+		tmp.put(COUNTRYORIGIN, AttributeMode.INITIAL);
 		DEFAULT_INITIAL_ATTRIBUTES = Collections.unmodifiableMap(tmp);
 	}
 	@Override
@@ -38,7 +41,43 @@ public abstract class GeneratedApparelProduct extends Product
 	}
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>ApparelProduct.genders</code> attribute.
+	 * <i>Generated method</i> - Getter of the <code>TointProduct.countryOrigin</code> attribute.
+	 * @return the countryOrigin - product country origin
+	 */
+	public String getCountryOrigin(final SessionContext ctx)
+	{
+		return (String)getProperty( ctx, COUNTRYORIGIN);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>TointProduct.countryOrigin</code> attribute.
+	 * @return the countryOrigin - product country origin
+	 */
+	public String getCountryOrigin()
+	{
+		return getCountryOrigin( getSession().getSessionContext() );
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of the <code>TointProduct.countryOrigin</code> attribute. 
+	 * @param value the countryOrigin - product country origin
+	 */
+	public void setCountryOrigin(final SessionContext ctx, final String value)
+	{
+		setProperty(ctx, COUNTRYORIGIN,value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of the <code>TointProduct.countryOrigin</code> attribute. 
+	 * @param value the countryOrigin - product country origin
+	 */
+	public void setCountryOrigin(final String value)
+	{
+		setCountryOrigin( getSession().getSessionContext(), value );
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>TointProduct.genders</code> attribute.
 	 * @return the genders - List of genders that the ApparelProduct is designed for
 	 */
 	public List<EnumerationValue> getGenders(final SessionContext ctx)
@@ -48,7 +87,7 @@ public abstract class GeneratedApparelProduct extends Product
 	}
 	
 	/**
-	 * <i>Generated method</i> - Getter of the <code>ApparelProduct.genders</code> attribute.
+	 * <i>Generated method</i> - Getter of the <code>TointProduct.genders</code> attribute.
 	 * @return the genders - List of genders that the ApparelProduct is designed for
 	 */
 	public List<EnumerationValue> getGenders()
@@ -57,7 +96,7 @@ public abstract class GeneratedApparelProduct extends Product
 	}
 	
 	/**
-	 * <i>Generated method</i> - Setter of the <code>ApparelProduct.genders</code> attribute. 
+	 * <i>Generated method</i> - Setter of the <code>TointProduct.genders</code> attribute. 
 	 * @param value the genders - List of genders that the ApparelProduct is designed for
 	 */
 	public void setGenders(final SessionContext ctx, final List<EnumerationValue> value)
@@ -66,7 +105,7 @@ public abstract class GeneratedApparelProduct extends Product
 	}
 	
 	/**
-	 * <i>Generated method</i> - Setter of the <code>ApparelProduct.genders</code> attribute. 
+	 * <i>Generated method</i> - Setter of the <code>TointProduct.genders</code> attribute. 
 	 * @param value the genders - List of genders that the ApparelProduct is designed for
 	 */
 	public void setGenders(final List<EnumerationValue> value)

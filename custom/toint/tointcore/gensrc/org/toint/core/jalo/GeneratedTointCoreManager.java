@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 28-Oct-2021, 5:29:34 PM                     ---
+ * --- Generated at 08-Nov-2021, 10:38:55 AM                    ---
  * ----------------------------------------------------------------
  */
 package org.toint.core.jalo;
@@ -21,6 +21,9 @@ import org.toint.core.jalo.ApparelProduct;
 import org.toint.core.jalo.ApparelSizeVariantProduct;
 import org.toint.core.jalo.ApparelStyleVariantProduct;
 import org.toint.core.jalo.ElectronicsColorVariantProduct;
+import org.toint.core.jalo.TointProduct;
+import org.toint.core.jalo.TointSizeVariantProduct;
+import org.toint.core.jalo.TointStyleVariantProduct;
 
 /**
  * Generated class for type <code>TointCoreManager</code>.
@@ -148,6 +151,84 @@ public abstract class GeneratedTointCoreManager extends Extension
 	public ElectronicsColorVariantProduct createElectronicsColorVariantProduct(final Map attributeValues)
 	{
 		return createElectronicsColorVariantProduct( getSession().getSessionContext(), attributeValues );
+	}
+	
+	public TointProduct createTointProduct(final SessionContext ctx, final Map attributeValues)
+	{
+		try
+		{
+			ComposedType type = getTenant().getJaloConnection().getTypeManager().getComposedType( TointCoreConstants.TC.TOINTPRODUCT );
+			return (TointProduct)type.newInstance( ctx, attributeValues );
+		}
+		catch( JaloGenericCreationException e)
+		{
+			final Throwable cause = e.getCause();
+			throw (cause instanceof RuntimeException ?
+			(RuntimeException)cause
+			:
+			new JaloSystemException( cause, cause.getMessage(), e.getErrorCode() ) );
+		}
+		catch( JaloBusinessException e )
+		{
+			throw new JaloSystemException( e ,"error creating TointProduct : "+e.getMessage(), 0 );
+		}
+	}
+	
+	public TointProduct createTointProduct(final Map attributeValues)
+	{
+		return createTointProduct( getSession().getSessionContext(), attributeValues );
+	}
+	
+	public TointSizeVariantProduct createTointSizeVariantProduct(final SessionContext ctx, final Map attributeValues)
+	{
+		try
+		{
+			ComposedType type = getTenant().getJaloConnection().getTypeManager().getComposedType( TointCoreConstants.TC.TOINTSIZEVARIANTPRODUCT );
+			return (TointSizeVariantProduct)type.newInstance( ctx, attributeValues );
+		}
+		catch( JaloGenericCreationException e)
+		{
+			final Throwable cause = e.getCause();
+			throw (cause instanceof RuntimeException ?
+			(RuntimeException)cause
+			:
+			new JaloSystemException( cause, cause.getMessage(), e.getErrorCode() ) );
+		}
+		catch( JaloBusinessException e )
+		{
+			throw new JaloSystemException( e ,"error creating TointSizeVariantProduct : "+e.getMessage(), 0 );
+		}
+	}
+	
+	public TointSizeVariantProduct createTointSizeVariantProduct(final Map attributeValues)
+	{
+		return createTointSizeVariantProduct( getSession().getSessionContext(), attributeValues );
+	}
+	
+	public TointStyleVariantProduct createTointStyleVariantProduct(final SessionContext ctx, final Map attributeValues)
+	{
+		try
+		{
+			ComposedType type = getTenant().getJaloConnection().getTypeManager().getComposedType( TointCoreConstants.TC.TOINTSTYLEVARIANTPRODUCT );
+			return (TointStyleVariantProduct)type.newInstance( ctx, attributeValues );
+		}
+		catch( JaloGenericCreationException e)
+		{
+			final Throwable cause = e.getCause();
+			throw (cause instanceof RuntimeException ?
+			(RuntimeException)cause
+			:
+			new JaloSystemException( cause, cause.getMessage(), e.getErrorCode() ) );
+		}
+		catch( JaloBusinessException e )
+		{
+			throw new JaloSystemException( e ,"error creating TointStyleVariantProduct : "+e.getMessage(), 0 );
+		}
+	}
+	
+	public TointStyleVariantProduct createTointStyleVariantProduct(final Map attributeValues)
+	{
+		return createTointStyleVariantProduct( getSession().getSessionContext(), attributeValues );
 	}
 	
 	@Override
