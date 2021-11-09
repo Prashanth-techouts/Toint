@@ -4,15 +4,32 @@
 # ImpEx for Importing Categories
 
 # Macros / Replacement Parameter definitions
-$productCatalog=__PRODUCT_CATALOG_NAME__
-$productCatalogName=__PRODUCT_CATALOG_FULL_NAME__
+$productCatalog=Toint_ProductCatalog
+$productCatalogName=Toint Product Catalog
 
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $supercategories=source(code, $catalogVersion)[unique=true]
 $categories=target(code, $catalogVersion)[unique=true]
 
 # Insert Categories
-INSERT_UPDATE Category;code[unique=true];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
+INSERT_UPDATE Category ; code[unique=true] ; $catalogVersion ; supercategories(code,$catalogVersion) ; allowedPrincipals(uid)[default='customergroup']
+                       ; categories        ;                 ;                                       
+                       ; collections       ;                 ;                                       
+                       ; clothes           ;                 ; categories                            
+                       ; shirts            ;                 ; clothes                  
+                       ; tshirts           ;                 ; clothes                          
+                       ; brands            ;                 ;                                       
+                       ; Aero              ;                 ; brands                                
+                       ; Levis             ;                 ; brands                                
+                       ; Mufti             ;                 ; brands                                
 
+INSERT_UPDATE Category ; code[unique=true] ; $catalogVersion ; allowedPrincipals(uid)[default='customergroup']
+                       ; 250000            ;                 ;                                                ;  
+                       ; 250100            ;                 ;                                                
+                       ; 250300            ;                 ;                                                
 # Insert Category Structure
-INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
+INSERT_UPDATE CategoryCategoryRelation ; $categories ; $supercategories
+                                       ; 250000      ; categories      ;  
+                                       ; 250300      ; 250000          ;  
+                                       ; 250100      ; 250000          ;  
+

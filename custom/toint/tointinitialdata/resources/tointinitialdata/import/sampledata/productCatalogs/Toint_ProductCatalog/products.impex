@@ -4,8 +4,8 @@
 # ImpEx for Importing Products
 
 # Macros / Replacement Parameter definitions
-$productCatalog=__PRODUCT_CATALOG_NAME__
-$productCatalogName=__PRODUCT_CATALOG_FULL_NAME__
+$productCatalog=Toint_ProductCatalog
+$productCatalogName=Toint Product Catalog
 
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $supercategories=supercategories(code, $catalogVersion)
@@ -13,4 +13,45 @@ $baseProduct=baseProduct(code,$catalogVersion)
 $approved=approvalstatus(code)[default='check']
 
 # Insert Products
-INSERT_UPDATE Product;code[unique=true];$supercategories;manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved
+INSERT_UPDATE TointProduct ; code[unique=true] ; $catalogVersion ; unit(code) ; supercategories(code,$catalogVersion) ; varianttype(code)        ; $approved ; ean ; genders(code) ; countryOrigin
+                           ; M12341            ;                 ; pieces     ; Aero,250300                           ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12342            ;                 ; pieces     ; Levis,250300                          ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12343            ;                 ; pieces     ; Mufti,250300                          ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+
+INSERT_UPDATE TointStyleVariantProduct ; code[unique=true] ; $catalogVersion ; $baseProduct ; unit(code) ; swatchColors(code) ; supercategories(code,$catalogVersion) ; varianttype(code)       ; $approved
+                                       ; M12341_B          ;                 ; M12341       ; pieces     ; BLACK              ; Aero,250300                           ; TointSizeVariantProduct
+                                       ; M12341_W          ;                 ; M12341       ; pieces     ; WHITE              ; Aero,250300                           ; TointSizeVariantProduct
+                                       
+                                       ; M12342_B          ;                 ; M12342       ; pieces     ; BLACK              ; Levis,250300                          ; TointSizeVariantProduct
+                                       ; M12342_W          ;                 ; M12342       ; pieces     ; WHITE              ; Levis,250300                          ; TointSizeVariantProduct
+                                       
+                                       ; M12343_B          ;                 ; M12343       ; pieces     ; BLACK              ; Aero,250300                           ; TointSizeVariantProduct
+                                       ; M12343_W          ;                 ; M12343       ; pieces     ; WHITE              ; Aero,250300                           ; TointSizeVariantProduct
+                                       
+INSERT_UPDATE TointSizeVariantProduct ; code[unique=true] ; $catalogVersion ; $baseProduct ; supercategories(code,$catalogVersion) ; unit(code)[default='pieces'] ; $approved ; size
+                                       ; 30012451          ;                 ; M12341_B     ; Aero,250300                           ; pieces                       ;           ; S   
+                                       ; 30012452          ;                 ; M12341_B     ; Aero,250300                           ; pieces                       ;           ; M   
+                                       ; 30012453          ;                 ; M12341_B     ; Aero,250300                           ; pieces                       ;           ; L   
+
+                                       ; 30012461          ;                 ; M12341_W     ; Aero,250300                           ; pieces                       ;           ; S   
+                                       ; 30012462          ;                 ; M12341_W     ; Aero,250300                           ; pieces                       ;           ; M   
+                                       ; 30012463          ;                 ; M12341_W     ; Aero,250300                           ; pieces                       ;           ; L   
+                                       
+                                       ; 30012551          ;                 ; M12342_B     ; Levis,250300                          ; pieces                       ;           ; S   
+                                       ; 30012552          ;                 ; M12342_B     ; Levis,250300                          ; pieces                       ;           ; M   
+                                       ; 30012553          ;                 ; M12342_B     ; Levis,250300                          ; pieces                       ;           ; L   
+
+                                       ; 30012561          ;                 ; M12342_W     ; Levis,250300                          ; pieces                       ;           ; S   
+                                       ; 30012562          ;                 ; M12342_W     ; Levis,250300                          ; pieces                       ;           ; M   
+                                       ; 30012563          ;                 ; M12342_W     ; Levis,250300                          ; pieces                       ;           ; L   
+                                       
+                                       ; 30012651          ;                 ; M12341_B     ; Mufti,250300                          ; pieces                       ;           ; S   
+                                       ; 30012652          ;                 ; M12341_B     ; Mufti,250300                          ; pieces                       ;           ; M   
+                                       ; 30012653          ;                 ; M12341_B     ; Mufti,250300                          ; pieces                       ;           ; L   
+
+                                       ; 30012661          ;                 ; M12341_W     ; Mufti,250300                          ; pieces                       ;           ; S   
+                                       ; 30012662          ;                 ; M12341_W     ; Mufti,250300                          ; pieces                       ;           ; M   
+                                       ; 30012663          ;                 ; M12341_W     ; Mufti,250300                          ; pieces                       ;           ; L   
+                                       
+                                       
+                                       

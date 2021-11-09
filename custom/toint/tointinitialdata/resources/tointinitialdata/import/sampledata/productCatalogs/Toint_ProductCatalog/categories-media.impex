@@ -4,15 +4,24 @@
 # ImpEx for Importing Category Media
 
 # Macros / Replacement Parameter definitions
-$productCatalog=__PRODUCT_CATALOG_NAME__
-$productCatalogName=__PRODUCT_CATALOG_FULL_NAME__
+$productCatalog=Toint_ProductCatalog
+$productCatalogName=Toint Product Catalog
 
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$media=@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator]
 $thumbnail=thumbnail(code, $catalogVersion)
 $picture=picture(code, $catalogVersion)
-$siteResource=jar:org.toint.initialdata.setup.InitialDataSystemSetup&/tointinitialdata/import/productCatalogs/$productCatalog
+$logos=logo(code, $catalogVersion)
+$siteResource=jar:org.toint.initialdata.setup.InitialDataSystemSetup&/tointinitialdata/import/sampledata/productCatalogs/$productCatalog
 
 # Import Category Media
-INSERT_UPDATE Media;code[unique=true];realfilename;@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion
+INSERT_UPDATE Media ; mediaFormat(qualifier) ; code[unique=true] ; $media                                 ; mime[default='image/jpeg'] ; $catalogVersion ; folder(qualifier)
+                    ; 96Wx96H                ; brand-logo-Aero   ; $siteResource/images/96Wx96H/aero.jpg  ;                            ;                 ; images           
+                    ; 96Wx96H                ; brand-logo-Levis  ; $siteResource/images/96Wx96H/levis.jpg ;                            ;                 ; images           
+                    ; 96Wx96H                ; brand-logo-Mufti  ; $siteResource/images/96Wx96H/mufti.jpg ;                            ;                 ; images           
 
-UPDATE Category;code[unique=true];$thumbnail;$picture;allowedPrincipals(uid)[default='customergroup'];$catalogVersion
+# Update Categories with medias
+UPDATE Category ; code[unique=true] ; $picture ; $logos           ; $catalogVersion
+                ; Aero              ;          ; brand-logo-Aero  ;                
+                ; Levis             ;          ; brand-logo-Levis ;                
+                ; Mufti             ;          ; brand-logo-Mufti ;                

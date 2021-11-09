@@ -4,8 +4,8 @@
 # ImpEx for Importing Product Localisations
  
 # Macros / Replacement Parameter definitions
-$productCatalog=__PRODUCT_CATALOG_NAME__
-$productCatalogName=__PRODUCT_CATALOG_FULL_NAME__
+$productCatalog=Toint_ProductCatalog
+$productCatalogName=Toint Product Catalog
 
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 
@@ -13,4 +13,17 @@ $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[defa
 $lang=en
 
 # Update allProducts with localisations
-UPDATE Product;code[unique=true];$catalogVersion;name[lang=$lang];summary[lang=$lang];description[lang=$lang]
+UPDATE Product ; code[unique=true] ; $catalogVersion ; name[lang=$lang] ; summary[lang=$lang]                                                                                                                                               
+               ; M12341            ;                 ; Aero shirt       ; <p> Show everyone what a nice shirt you have. Now it is even possible when you are in office, with the casual shirt by Aero. Super casual shirt with two pockets. 
+               ; M12342            ;                 ; Levis shirt      ; <p> Show everyone what a nice shirt you have. Now it is even possible when you are in office, with the casual shirt by Levis. Super casual shirt with two pockets.
+               ; M12343            ;                 ; Mufti shirt      ; <p> Show everyone what a nice shirt you have. Now it is even possible when you are in office, with the casual shirt by Mufti. Super casual shirt with two pockets.
+               
+               ; M12341_B          ;                 ; Aero shirt black ; <p> Show everyone what a nice shirt you have. Now it is even possible when you are in office, with the casual shirt by Aero. Super casual shirt with two pockets. 
+               ; M12341_W          ;                 ; Aero shirt white ; <p> Show everyone what a nice shirt you have. Now it is even possible when you are in office, with the casual shirt by Aero. Super casual shirt with two pockets. 
+               
+               ; M12342_B          ;                 ; Levis shirt black ; <p> Show everyone what a nice shirt you have. Now it is even possible when you are in office, with the casual shirt by Aero. Super casual shirt with two pockets. 
+               ; M12342_W          ;                 ; Levis shirt white ; <p> Show everyone what a nice shirt you have. Now it is even possible when you are in office, with the casual shirt by Aero. Super casual shirt with two pockets. 
+               
+               ; M12343_B          ;                 ; Mufti shirt black ; <p> Show everyone what a nice shirt you have. Now it is even possible when you are in office, with the casual shirt by Aero. Super casual shirt with two pockets. 
+               ; M12343_W          ;                 ; Mufti shirt white ; <p> Show everyone what a nice shirt you have. Now it is even possible when you are in office, with the casual shirt by Aero. Super casual shirt with two pockets. 
+               

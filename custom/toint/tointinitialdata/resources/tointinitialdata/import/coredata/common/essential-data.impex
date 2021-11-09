@@ -32,7 +32,7 @@ UPDATE Language;isocode[unique=true];name[lang=$lang];fallbackLanguages(isocode)
 ;EUR;1;2;€;"Euro"
 ;USD;1,4;2;$;"US Dollar"
 ;JPY;120;0;¥;"Japanese Yen"
-;INR;1;2;₹;"Indian Rupee"
+;INR;1;0;₹;"Indian Rupee"
 
 # Titles
 UPDATE Title;code[unique=true];name[lang=$lang]
