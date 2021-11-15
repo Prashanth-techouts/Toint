@@ -21,132 +21,30 @@ $siteResource=jar:org.toint.initialdata.setup.InitialDataSystemSetup&/tointiniti
 
 # Create Media
 # INSERT_UPDATE Media ; mediaFormat(qualifier) ; code[unique=true] ; $media ; mime[default='image/jpeg'] ; $catalogVersion ; folder(qualifier)
-INSERT_UPDATE Media ; mediaFormat(qualifier) ;          ; code[unique=true]         ; $media                                   ; mime[default='image/jpeg'] ; $catalogVersion ; folder(qualifier)
-#Aero black and white shirt
-# white shirt       
+INSERT_UPDATE Media ; mediaFormat(qualifier) ;          ; code[unique=true]         ; $media                                              ; mime[default='image/jpeg'] ; $catalogVersion ; folder(qualifier)
+#Aero shirt         
 #first image        
-                    ; 1200Wx1200H            ; M12341_1 ; /1200Wx1200H/M12341_1.jpg ; $siteResource/images/1200Wx1200H/W1.jpeg ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12341_1 ; /515Wx515H/M12341_1.jpg   ; $siteResource/images/515Wx515H/W1.jpeg   ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12341_1 ; /300Wx300H/M12341_1.jpg   ; $siteResource/images/300Wx300H/W1.jpeg   ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12341_1 ; /96Wx96H/M12341_1.jpg     ; $siteResource/images/96Wx96H/W1.jpeg     ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12341_1 ; /65Wx65H/M12341_1.jpg     ; $siteResource/images/65Wx65H/W1.jpeg     ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12341_1 ; /30Wx30H/M12341_1.jpg     ; $siteResource/images/30Wx30H/W1.jpeg     ;                            ;                 ; images           
+                    ; 1200Wx1200H            ; M12311_1 ; /1200Wx1200H/M12311_1.jpg ; $siteResource/images/1200Wx1200H/M12311_1_1200.jpeg ;                            ;                 ; images           
+                    ; 515Wx515H              ; M12311_1 ; /515Wx515H/M12311_1.jpg   ; $siteResource/images/515Wx515H/M12311_1_515.jpeg    ;                            ;                 ; images           
+                    ; 300Wx300H              ; M12311_1 ; /300Wx300H/M12311_1.jpg   ; $siteResource/images/300Wx300H/M12311_1_300.jpeg    ;                            ;                 ; images           
+                    ; 96Wx96H                ; M12311_1 ; /96Wx96H/M12311_1.jpg     ; $siteResource/images/96Wx96H/M12311_1_96.jpeg       ;                            ;                 ; images           
+                    ; 65Wx65H                ; M12311_1 ; /65Wx65H/M12311_1.jpg     ; $siteResource/images/65Wx65H/M12311_1_65.jpeg       ;                            ;                 ; images           
+                    ; 30Wx30H                ; M12311_1 ; /30Wx30H/M12311_1.jpg     ; $siteResource/images/30Wx30H/M12311_1_30.jpeg       ;                            ;                 ; images           
 #second image       
-                    ; 1200Wx1200H            ; M12341_2 ; /1200Wx1200H/M12341_2.jpg ; $siteResource/images/1200Wx1200H/W2.jpeg ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12341_2 ; /515Wx515H/M12341_2.jpg   ; $siteResource/images/515Wx515H/W2.jpeg   ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12341_2 ; /300Wx300H/M12341_2.jpg   ; $siteResource/images/300Wx300H/W2.jpeg   ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12341_2 ; /96Wx96H/M12341_2.jpg     ; $siteResource/images/96Wx96H/W2.jpeg     ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12341_2 ; /65Wx65H/M12341_2.jpg     ; $siteResource/images/65Wx65H/W2.jpeg     ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12341_2 ; /30Wx30H/M12341_2.jpg     ; $siteResource/images/30Wx30H/W2.jpeg     ;                            ;                 ; images           
-#third image        
-                    ; 1200Wx1200H            ; M12341_3 ; /1200Wx1200H/M12341_3.jpg ; $siteResource/images/1200Wx1200H/W3.jpeg ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12341_3 ; /515Wx515H/M12341_3.jpg   ; $siteResource/images/515Wx515H/W3.jpeg   ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12341_3 ; /300Wx300H/M12341_3.jpg   ; $siteResource/images/300Wx300H/W3.jpeg   ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12341_3 ; /96Wx96H/M12341_3.jpg     ; $siteResource/images/96Wx96H/W3.jpeg     ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12341_3 ; /65Wx65H/M12341_3.jpg     ; $siteResource/images/65Wx65H/W3.jpeg     ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12341_3 ; /30Wx30H/M12341_3.jpg     ; $siteResource/images/30Wx30H/W3.jpeg     ;                            ;                 ; images           
-#fourth image       
-                    ; 1200Wx1200H            ; M12341_4 ; /1200Wx1200H/M12341_4.jpg ; $siteResource/images/1200Wx1200H/W4.jpeg ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12341_4 ; /515Wx515H/M12341_4.jpg   ; $siteResource/images/515Wx515H/W4.jpeg   ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12341_4 ; /300Wx300H/M12341_4.jpg   ; $siteResource/images/300Wx300H/W4.jpeg   ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12341_4 ; /96Wx96H/M12341_4.jpg     ; $siteResource/images/96Wx96H/W4.jpeg     ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12341_4 ; /65Wx65H/M12341_4.jpg     ; $siteResource/images/65Wx65H/W4.jpeg     ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12341_4 ; /30Wx30H/M12341_4.jpg     ; $siteResource/images/30Wx30H/W4.jpeg     ;                            ;                 ; images           
+                    ; 1200Wx1200H            ; M12311_2 ; /1200Wx1200H/M12311_2.jpg ; $siteResource/images/1200Wx1200H/M12311_2_1200.jpeg ;                            ;                 ; images           
+                    ; 515Wx515H              ; M12311_2 ; /515Wx515H/M12311_2.jpg   ; $siteResource/images/515Wx515H/M12311_2_515.jpeg    ;                            ;                 ; images           
+                    ; 300Wx300H              ; M12311_2 ; /300Wx300H/M12311_2.jpg   ; $siteResource/images/300Wx300H/M12311_2_300.jpeg    ;                            ;                 ; images           
+                    ; 96Wx96H                ; M12311_2 ; /96Wx96H/M12311_2.jpg     ; $siteResource/images/96Wx96H/M12311_2_96.jpeg       ;                            ;                 ; images           
+                    ; 65Wx65H                ; M12311_2 ; /65Wx65H/M12311_2.jpg     ; $siteResource/images/65Wx65H/M12311_2_65.jpeg       ;                            ;                 ; images           
+                    ; 30Wx30H                ; M12311_2 ; /30Wx30H/M12311_2.jpg     ; $siteResource/images/30Wx30H/M12311_2_30.jpeg       ;                            ;                 ; images           
                     
-#black              
-#first image        
-                    ; 1200Wx1200H            ; M12341_5 ; /1200Wx1200H/M12341_5.jpg ; $siteResource/images/1200Wx1200H/B1.jpeg ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12341_5 ; /515Wx515H/M12341_5.jpg   ; $siteResource/images/515Wx515H/B1.jpeg   ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12341_5 ; /300Wx300H/M12341_5.jpg   ; $siteResource/images/300Wx300H/B1.jpeg   ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12341_5 ; /96Wx96H/M12341_5.jpg     ; $siteResource/images/96Wx96H/B1.jpeg     ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12341_5 ; /65Wx65H/M12341_5.jpg     ; $siteResource/images/65Wx65H/B1.jpeg     ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12341_5 ; /30Wx30H/M12341_5.jpg     ; $siteResource/images/30Wx30H/B1.jpeg     ;                            
-# second image                   
-                    ; 1200Wx1200H            ; M12341_6 ; /1200Wx1200H/M12341_6.jpg ; $siteResource/images/1200Wx1200H/B2.jpeg ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12341_6 ; /515Wx515H/M12341_6.jpg   ; $siteResource/images/515Wx515H/B2.jpeg   ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12341_6 ; /300Wx300H/M12341_6.jpg   ; $siteResource/images/300Wx300H/B2.jpeg   ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12341_6 ; /96Wx96H/M12341_6.jpg     ; $siteResource/images/96Wx96H/B2.jpeg     ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12341_6 ; /65Wx65H/M12341_6.jpg     ; $siteResource/images/65Wx65H/B2.jpeg     ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12341_6 ; /30Wx30H/M12341_6.jpg     ; $siteResource/images/30Wx30H/B2.jpeg     ;                            
-#third image        
-                    ; 1200Wx1200H            ; M12341_7 ; /1200Wx1200H/M12341_7.jpg ; $siteResource/images/1200Wx1200H/B3.jpeg ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12341_7 ; /515Wx515H/M12341_7.jpg   ; $siteResource/images/515Wx515H/B3.jpeg   ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12341_7 ; /300Wx300H/M12341_7.jpg   ; $siteResource/images/300Wx300H/B3.jpeg   ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12341_7 ; /96Wx96H/M12341_7.jpg     ; $siteResource/images/96Wx96H/B3.jpeg     ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12341_7 ; /65Wx65H/M12341_7.jpg     ; $siteResource/images/65Wx65H/B3.jpeg     ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12341_7 ; /30Wx30H/M12341_7.jpg     ; $siteResource/images/30Wx30H/B3.jpeg     ;                            
-#fourth image       
-                    ; 1200Wx1200H            ; M12341_8 ; /1200Wx1200H/M12341_8.jpg ; $siteResource/images/1200Wx1200H/B4.jpeg ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12341_8 ; /515Wx515H/M12341_8.jpg   ; $siteResource/images/515Wx515H/B4.jpeg   ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12341_8 ; /300Wx300H/M12341_8.jpg   ; $siteResource/images/300Wx300H/B4.jpeg   ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12341_8 ; /96Wx96H/M12341_8.jpg     ; $siteResource/images/96Wx96H/B4.jpeg     ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12341_8 ; /65Wx65H/M12341_8.jpg     ; $siteResource/images/65Wx65H/B4.jpeg     ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12341_8 ; /30Wx30H/M12341_8.jpg     ; $siteResource/images/30Wx30H/B4.jpeg     ;                            
-                                    
-                    
-#Levis black and white shirt
-                    ; 1200Wx1200H            ; M12342_1 ; /1200Wx1200H/M12342_1.jpg ; $siteResource/images/1200Wx1200H/W1.jpeg ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12342_1 ; /515Wx515H/M12342_1.jpg   ; $siteResource/images/515Wx515H/W1.jpeg   ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12342_1 ; /300Wx300H/M12342_1.jpg   ; $siteResource/images/300Wx300H/W1.jpeg   ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12342_1 ; /96Wx96H/M12342_1.jpg     ; $siteResource/images/96Wx96H/W1.jpeg     ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12342_1 ; /65Wx65H/M12342_1.jpg     ; $siteResource/images/65Wx65H/W1.jpeg     ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12342_1 ; /30Wx30H/M12342_1.jpg     ; $siteResource/images/30Wx30H/W1.jpeg     ;                            ;                 ; images           
-                    
-                    ; 1200Wx1200H            ; M12342_2 ; /1200Wx1200H/M12342_2.jpg ; $siteResource/images/1200Wx1200H/B1.jpg  ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12342_2 ; /515Wx515H/M12342_2.jpg   ; $siteResource/images/515Wx515H/B1.jpg    ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12342_2 ; /300Wx300H/M12342_2.jpg   ; $siteResource/images/300Wx300H/B1.jpg    ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12342_2 ; /96Wx96H/M12342_2.jpg     ; $siteResource/images/96Wx96H/B1.jpg      ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12342_2 ; /65Wx65H/M12342_2.jpg     ; $siteResource/images/65Wx65H/B1.jpg      ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12342_2 ; /30Wx30H/M12342_2.jpg     ; $siteResource/images/30Wx30H/B1.jpg      ;                            
-                    
-#Mufti black and white shirt
-                    ; 1200Wx1200H            ; M12343_1 ; /1200Wx1200H/M12343_1.jpg ; $siteResource/images/1200Wx1200H/W1.jpg  ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12343_1 ; /515Wx515H/M12343_1.jpg   ; $siteResource/images/515Wx515H/W1.jpg    ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12343_1 ; /300Wx300H/M12343_1.jpg   ; $siteResource/images/300Wx300H/W1.jpg    ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12343_1 ; /96Wx96H/M12343_1.jpg     ; $siteResource/images/96Wx96H/W1.jpg      ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12343_1 ; /65Wx65H/M12343_1.jpg     ; $siteResource/images/65Wx65H/W1.jpg      ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12343_1 ; /30Wx30H/M12343_1.jpg     ; $siteResource/images/30Wx30H/W1.jpg      ;                            ;                 ; images           
-                    
-                    ; 1200Wx1200H            ; M12343_2 ; /1200Wx1200H/M12343_2.jpg ; $siteResource/images/1200Wx1200H/B1.jpg  ;                            ;                 ; images           
-                    ; 515Wx515H              ; M12343_2 ; /515Wx515H/M12343_2.jpg   ; $siteResource/images/515Wx515H/B1.jpg    ;                            ;                 ; images           
-                    ; 300Wx300H              ; M12343_2 ; /300Wx300H/M12343_2.jpg   ; $siteResource/images/300Wx300H/B1.jpg    ;                            ;                 ; images           
-                    ; 96Wx96H                ; M12343_2 ; /96Wx96H/M12343_2.jpg     ; $siteResource/images/96Wx96H/B1.jpg      ;                            ;                 ; images           
-                    ; 65Wx65H                ; M12343_2 ; /65Wx65H/M12343_2.jpg     ; $siteResource/images/65Wx65H/B1.jpg      ;                            ;                 ; images           
-                    ; 30Wx30H                ; M12343_2 ; /30Wx30H/M12343_2.jpg     ; $siteResource/images/30Wx30H/B1.jpg      ;                            
-                                                              
-                    
-                                             
-
 # Create Media Containers
 INSERT_UPDATE MediaContainer ; qualifier[unique=true] ; $medias                                                                                                                                     ; $catalogVersion
-                             ; M12341_base_1          ; /1200Wx1200H/M12341_1.jpg,/515Wx515H/M12341_1.jpg,/300Wx300H/M12341_1.jpg,/96Wx96H/M12341_1.jpg,/65Wx65H/M12341_1.jpg,/30Wx30H/M12341_1.jpg ;                
-                             ; M12341_base_2          ; /1200Wx1200H/M12341_2.jpg,/515Wx515H/M12341_2.jpg,/300Wx300H/M12341_2.jpg,/96Wx96H/M12341_2.jpg,/65Wx65H/M12341_2.jpg,/30Wx30H/M12341_2.jpg ;                
-                             ; M12341_base_3          ; /1200Wx1200H/M12341_3.jpg,/515Wx515H/M12341_3.jpg,/300Wx300H/M12341_3.jpg,/96Wx96H/M12341_3.jpg,/65Wx65H/M12341_3.jpg,/30Wx30H/M12341_3.jpg ;                
-                             ; M12341_base_4          ; /1200Wx1200H/M12341_4.jpg,/515Wx515H/M12341_4.jpg,/300Wx300H/M12341_4.jpg,/96Wx96H/M12341_4.jpg,/65Wx65H/M12341_4.jpg,/30Wx30H/M12341_4.jpg ;                
-                             ; M12341_base_5          ; /1200Wx1200H/M12341_5.jpg,/515Wx515H/M12341_5.jpg,/300Wx300H/M12341_5.jpg,/96Wx96H/M12341_5.jpg,/65Wx65H/M12341_5.jpg,/30Wx30H/M12341_5.jpg ;                
-                             ; M12341_base_6          ; /1200Wx1200H/M12341_6.jpg,/515Wx515H/M12341_6.jpg,/300Wx300H/M12341_6.jpg,/96Wx96H/M12341_6.jpg,/65Wx65H/M12341_6.jpg,/30Wx30H/M12341_6.jpg ;                
-                             ; M12341_base_7          ; /1200Wx1200H/M12341_7.jpg,/515Wx515H/M12341_7.jpg,/300Wx300H/M12341_7.jpg,/96Wx96H/M12341_7.jpg,/65Wx65H/M12341_7.jpg,/30Wx30H/M12341_7.jpg ;                
-                             ; M12341_base_8          ; /1200Wx1200H/M12341_8.jpg,/515Wx515H/M12341_8.jpg,/300Wx300H/M12341_8.jpg,/96Wx96H/M12341_8.jpg,/65Wx65H/M12341_8.jpg,/30Wx30H/M12341_8.jpg ;                
+                             ; M12311_base_1          ; /1200Wx1200H/M12311_1.jpg,/515Wx515H/M12311_1.jpg,/300Wx300H/M12311_1.jpg,/96Wx96H/M12311_1.jpg,/65Wx65H/M12311_1.jpg,/30Wx30H/M12311_1.jpg ;                
+                             ; M12311_base_2          ; /1200Wx1200H/M12311_2.jpg,/515Wx515H/M12311_2.jpg,/300Wx300H/M12311_2.jpg,/96Wx96H/M12311_2.jpg,/65Wx65H/M12311_2.jpg,/30Wx30H/M12311_2.jpg ;                
                              
-                             ; M12342_1               ; /1200Wx1200H/M12342_1.jpg,/515Wx515H/M12342_1.jpg,/300Wx300H/M12342_1.jpg,/96Wx96H/M12342_1.jpg,/65Wx65H/M12342_1.jpg,/30Wx30H/M12342_1.jpg ;                
-                             ; M12342_2               ; /1200Wx1200H/M12342_2.jpg,/515Wx515H/M12342_2.jpg,/300Wx300H/M12342_2.jpg,/96Wx96H/M12342_2.jpg,/65Wx65H/M12342_2.jpg,/30Wx30H/M12342_2.jpg ;                
-                             
-                             ; M12343_1               ; /1200Wx1200H/M12343_1.jpg,/515Wx515H/M12343_1.jpg,/300Wx300H/M12343_1.jpg,/96Wx96H/M12343_1.jpg,/65Wx65H/M12343_1.jpg,/30Wx30H/M12343_1.jpg ;                
-                             ; M12342_2               ; /1200Wx1200H/M12343_2.jpg,/515Wx515H/M12343_2.jpg,/300Wx300H/M12343_2.jpg,/96Wx96H/M12343_2.jpg,/65Wx65H/M12343_2.jpg,/30Wx30H/M12343_2.jpg ;                
-
 # Update Products with Media and Media Containers
 UPDATE TointProduct ; code[unique=true] ; $picture                ; $thumbnail            ; $others                                                                                                                                     ; $normal                 ; $thumbnails           ; $catalogVersion ; $galleryImages             
-                    ; M12341            ; /300Wx300H/M12341_1.jpg ; /96Wx96H/M12341_1.jpg ; /1200Wx1200H/M12341_1.jpg,/515Wx515H/M12341_1.jpg,/300Wx300H/M12341_1.jpg,/96Wx96H/M12341_1.jpg,/65Wx65H/M12341_1.jpg,/30Wx30H/M12341_1.jpg ; /300Wx300H/M12341_1.jpg ; /96Wx96H/M12341_1.jpg ;                 ; M12341_base_1,M12341_base_5
-                    ; M12342            ; /300Wx300H/M12342_1.jpg ; /96Wx96H/M12342_1.jpg ; /1200Wx1200H/M12342_1.jpg,/515Wx515H/M12342_1.jpg,/300Wx300H/M12342_1.jpg,/96Wx96H/M12342_1.jpg,/65Wx65H/M12342_1.jpg,/30Wx30H/M12342_1.jpg ; /300Wx300H/M12342_1.jpg ; /96Wx96H/M12342_1.jpg ;                 ; M12342_base_1              
-                    ; M12343            ; /300Wx300H/M12343_1.jpg ; /96Wx96H/M12343_1.jpg ; /1200Wx1200H/M12343_1.jpg,/515Wx515H/M12343_1.jpg,/300Wx300H/M12343_1.jpg,/96Wx96H/M12343_1.jpg,/65Wx65H/M12343_1.jpg,/30Wx30H/M12343_1.jpg ; /300Wx300H/M12343_1.jpg ; /96Wx96H/M12343_1.jpg ;                 ; M12343_base_1              
+                    ; M12311            ; /300Wx300H/M12311_1.jpg ; /96Wx96H/M12311_1.jpg ; /1200Wx1200H/M12311_1.jpg,/515Wx515H/M12311_1.jpg,/300Wx300H/M12311_1.jpg,/96Wx96H/M12311_1.jpg,/65Wx65H/M12311_1.jpg,/30Wx30H/M12311_1.jpg ; /300Wx300H/M12311_1.jpg ; /96Wx96H/M12311_1.jpg ;                 ; M12311_base_1,M12311_base_2
                     
-UPDATE TointStyleVariantProduct ; code[unique=true] ; $picture                ; $thumbnail            ; $others                                                                                                                                     ; $normal                 ; $thumbnails           ; $catalogVersion ; $galleryImages                                         
-                                ; M12341_W          ; /300Wx300H/M12341_1.jpg ; /96Wx96H/M12341_1.jpg ; /1200Wx1200H/M12341_1.jpg,/515Wx515H/M12341_1.jpg,/300Wx300H/M12341_1.jpg,/96Wx96H/M12341_1.jpg,/65Wx65H/M12341_1.jpg,/30Wx30H/M12341_1.jpg ; /300Wx300H/M12341_1.jpg ; /96Wx96H/M12341_1.jpg ;                 ; M12341_base_1,M12341_base_2,M12341_base_3,M12341_base_4
-                                ; M12341_B          ; /300Wx300H/M12341_5.jpg ; /96Wx96H/M12341_5.jpg ; /1200Wx1200H/M12341_5.jpg,/515Wx515H/M12341_5.jpg,/300Wx300H/M12341_5.jpg,/96Wx96H/M12341_5.jpg,/65Wx65H/M12341_5.jpg,/30Wx30H/M12341_5.jpg ; /300Wx300H/M12341_5.jpg ; /96Wx96H/M12341_5.jpg ;                 ; M12341_base_5,M12341_base_6,M12341_base_7,M12341_base_8
-                                
-                                ; M12342_W          ; /300Wx300H/M12342_1.jpg ; /96Wx96H/M12342_1.jpg ; /1200Wx1200H/M12342_1.jpg,/515Wx515H/M12342_1.jpg,/300Wx300H/M12342_1.jpg,/96Wx96H/M12342_1.jpg,/65Wx65H/M12342_1.jpg,/30Wx30H/M12342_1.jpg ; /300Wx300H/M12342_1.jpg ; /96Wx96H/M12342_1.jpg ;                 ; M12342_1                                               
-                                ; M12342_B          ; /300Wx300H/M12342_2.jpg ; /96Wx96H/M12342_2.jpg ; /1200Wx1200H/M12342_2.jpg,/515Wx515H/M12342_2.jpg,/300Wx300H/M12342_2.jpg,/96Wx96H/M12342_2.jpg,/65Wx65H/M12342_2.jpg,/30Wx30H/M12342_2.jpg ; /300Wx300H/M12342_2.jpg ; /96Wx96H/M12342_2.jpg ;                 ; M12341_2                                               
-                                
-                                ; M12343_W          ; /300Wx300H/M12343_1.jpg ; /96Wx96H/M12343_1.jpg ; /1200Wx1200H/M12343_1.jpg,/515Wx515H/M12343_1.jpg,/300Wx300H/M12343_1.jpg,/96Wx96H/M12343_1.jpg,/65Wx65H/M12343_1.jpg,/30Wx30H/M12343_1.jpg ; /300Wx300H/M12343_1.jpg ; /96Wx96H/M12343_1.jpg ;                 ; M12343_1                                               
-                                ; M12343_B          ; /300Wx300H/M12343_2.jpg ; /96Wx96H/M12343_2.jpg ; /1200Wx1200H/M12343_2.jpg,/515Wx515H/M12343_2.jpg,/300Wx300H/M12343_2.jpg,/96Wx96H/M12343_2.jpg,/65Wx65H/M12343_2.jpg,/30Wx30H/M12343_2.jpg ; /300Wx300H/M12343_2.jpg ; /96Wx96H/M12343_2.jpg ;                 ; M12343_2                                               
-                                
+                               

@@ -13,18 +13,25 @@ $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[defa
 $lang=en
 
 # Create Categories
-
 UPDATE Category ; code[unique=true] ; $catalogVersion ; name[lang=$lang] ; description[lang=$lang]
-                ; 250000            ;                 ; Streetwear men   ;                        
-                ; 250300            ;                 ; Shirts           ;                        
-                ; 250100            ;                 ; T-Shirts         ;                        
+                ; collections       ;                 ; Collections      ;                        
+                ; categories        ;                 ; Categories       ;                        
+                ; clothes           ;                 ; Clothes          ;                        
+                ; shirts            ;                 ; Shirts           ;                        
+                ; tshirts           ;                 ; T-Shirts         ;                        
+                ; jeans             ;                 ; Jeans            ;                        
+                ; jackets           ;                 ; Jackets          ;                        
+                ; watches           ;                 ; Watches          ;                        
+                ; sunglasses        ;                 ; Sunglasses       ;                        
+                ; accessories       ;                 ; Accessories      ;                        
+                ; brands            ;                 ; Brands           ;                        
                 ; Aero              ;                 ; Aero             ;                        
                 ; Levis             ;                 ; Levis            ;                        
                 ; Mufti             ;                 ; Mufti            ;                        
-                ; categories        ;                 ; Categories       ;                        
-                ; clothes           ;                 ; Clothes          ;                        
-                ; collections       ;                 ; Collections      ;                        
-                ; shirts            ;                 ; Shirts           ;                        
-                ; tshirts           ;                 ; T-Shirts         ;                        
-                ; brands            ;                 ; Brands           ;                        
+                ; Fossil            ;                 ; Fossil           ;                        
+                ; Rayban            ;                 ; Rayban           ;                        
+                ; Gap               ;                 ; Gap              ;                        
+                ; Zara              ;                 ; Zara             ;                        
+                    
+                      
                 

@@ -14,11 +14,47 @@ $approved=approvalstatus(code)[default='check']
 
 # Insert Products
 INSERT_UPDATE TointProduct ; code[unique=true] ; $catalogVersion ; unit(code) ; supercategories(code,$catalogVersion) ; varianttype(code)        ; $approved ; ean ; genders(code) ; countryOrigin
-                           ; M12341            ;                 ; pieces     ; Aero,250300                           ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
-                           ; M12342            ;                 ; pieces     ; Levis,250300                          ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
-                           ; M12343            ;                 ; pieces     ; Mufti,250300                          ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+#shirts                    
+                           ; M12311            ;                 ; pieces     ; Aero,shirts                           ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12312            ;                 ; pieces     ; Levis,shirts                          ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12313            ;                 ; pieces     ; Mufti,shirts                          ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12314            ;                 ; pieces     ; Gap,shirts                            ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12315            ;                 ; pieces     ; Zara,shirts                           ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           
+#tshirts                               
+                           ; M12321            ;                 ; pieces     ; Aero,tshirts                          ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12322            ;                 ; pieces     ; Levis,tshirts                         ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12323            ;                 ; pieces     ; Mufti,tshirts                         ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12324            ;                 ; pieces     ; Gap,tshirts                           ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12325            ;                 ; pieces     ; Zara,tshirts                          ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+#jeans                     
+                           ; M12331            ;                 ; pieces     ; Aero,jeans                            ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12332            ;                 ; pieces     ; Levis,jeans                           ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12333            ;                 ; pieces     ; Mufti,jeans                           ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12334            ;                 ; pieces     ; Gap,jeans                             ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12335            ;                 ; pieces     ; Zara,jeans                            ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+#jackets                   
+                           ; M12341            ;                 ; pieces     ; Aero,jackets                          ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12342            ;                 ; pieces     ; Levis,jackets                         ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12343            ;                 ; pieces     ; Mufti,jackets                         ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12344            ;                 ; pieces     ; Gap,jackets                           ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M12345            ;                 ; pieces     ; Zara,jackets                          ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
 
-INSERT_UPDATE TointStyleVariantProduct ; code[unique=true] ; $catalogVersion ; $baseProduct ; unit(code) ; swatchColors(code) ; supercategories(code,$catalogVersion) ; varianttype(code)       ; $approved
+#watches                   
+                           ; M45611            ;                 ; pieces     ; Fossil,watches                        ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M45612            ;                 ; pieces     ; Fossil,watches                        ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M45613            ;                 ; pieces     ; Fossil,watches                        ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M45614            ;                 ; pieces     ; Fossil,watches                        ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M45615            ;                 ; pieces     ; Fossil,watches                        ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+#sunglasses                
+                           ; M45621            ;                 ; pieces     ; Rayban,sunglasses                     ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M45622            ;                 ; pieces     ; Rayban,sunglasses                     ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M45623            ;                 ; pieces     ; Rayban,sunglasses                     ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M45624            ;                 ; pieces     ; Rayban,sunglasses                     ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                           ; M45625            ;                 ; pieces     ; Rayban,sunglasses                     ; TointStyleVariantProduct ;           ;     ; MALE          ; INDIA        
+                              
+
+INSERT_UPDATE TointStyleVariantProduct ; code[unique=true] ; $catalogVersion ; $baseProduct ; unit(code) ; swatchColors(code) ; supercategories(code,$catalogVersion) ; varianttype(code)      ; $approved
                                        ; M12341_B          ;                 ; M12341       ; pieces     ; BLACK              ; Aero,250300                           ; TointSizeVariantProduct
                                        ; M12341_W          ;                 ; M12341       ; pieces     ; WHITE              ; Aero,250300                           ; TointSizeVariantProduct
                                        
@@ -29,29 +65,29 @@ INSERT_UPDATE TointStyleVariantProduct ; code[unique=true] ; $catalogVersion ; $
                                        ; M12343_W          ;                 ; M12343       ; pieces     ; WHITE              ; Aero,250300                           ; TointSizeVariantProduct
                                        
 INSERT_UPDATE TointSizeVariantProduct ; code[unique=true] ; $catalogVersion ; $baseProduct ; supercategories(code,$catalogVersion) ; unit(code)[default='pieces'] ; $approved ; size
-                                       ; 30012451          ;                 ; M12341_B     ; Aero,250300                           ; pieces                       ;           ; S   
-                                       ; 30012452          ;                 ; M12341_B     ; Aero,250300                           ; pieces                       ;           ; M   
-                                       ; 30012453          ;                 ; M12341_B     ; Aero,250300                           ; pieces                       ;           ; L   
+                                      ; 30012451          ;                 ; M12341_B     ; Aero,250300                           ; pieces                       ;           ; S   
+                                      ; 30012452          ;                 ; M12341_B     ; Aero,250300                           ; pieces                       ;           ; M   
+                                      ; 30012453          ;                 ; M12341_B     ; Aero,250300                           ; pieces                       ;           ; L   
 
-                                       ; 30012461          ;                 ; M12341_W     ; Aero,250300                           ; pieces                       ;           ; S   
-                                       ; 30012462          ;                 ; M12341_W     ; Aero,250300                           ; pieces                       ;           ; M   
-                                       ; 30012463          ;                 ; M12341_W     ; Aero,250300                           ; pieces                       ;           ; L   
+                                      ; 30012461          ;                 ; M12341_W     ; Aero,250300                           ; pieces                       ;           ; S   
+                                      ; 30012462          ;                 ; M12341_W     ; Aero,250300                           ; pieces                       ;           ; M   
+                                      ; 30012463          ;                 ; M12341_W     ; Aero,250300                           ; pieces                       ;           ; L   
                                        
-                                       ; 30012551          ;                 ; M12342_B     ; Levis,250300                          ; pieces                       ;           ; S   
-                                       ; 30012552          ;                 ; M12342_B     ; Levis,250300                          ; pieces                       ;           ; M   
-                                       ; 30012553          ;                 ; M12342_B     ; Levis,250300                          ; pieces                       ;           ; L   
+                                      ; 30012551          ;                 ; M12342_B     ; Levis,250300                          ; pieces                       ;           ; S   
+                                      ; 30012552          ;                 ; M12342_B     ; Levis,250300                          ; pieces                       ;           ; M   
+                                      ; 30012553          ;                 ; M12342_B     ; Levis,250300                          ; pieces                       ;           ; L   
 
-                                       ; 30012561          ;                 ; M12342_W     ; Levis,250300                          ; pieces                       ;           ; S   
-                                       ; 30012562          ;                 ; M12342_W     ; Levis,250300                          ; pieces                       ;           ; M   
-                                       ; 30012563          ;                 ; M12342_W     ; Levis,250300                          ; pieces                       ;           ; L   
+                                      ; 30012561          ;                 ; M12342_W     ; Levis,250300                          ; pieces                       ;           ; S   
+                                      ; 30012562          ;                 ; M12342_W     ; Levis,250300                          ; pieces                       ;           ; M   
+                                      ; 30012563          ;                 ; M12342_W     ; Levis,250300                          ; pieces                       ;           ; L   
                                        
-                                       ; 30012651          ;                 ; M12341_B     ; Mufti,250300                          ; pieces                       ;           ; S   
-                                       ; 30012652          ;                 ; M12341_B     ; Mufti,250300                          ; pieces                       ;           ; M   
-                                       ; 30012653          ;                 ; M12341_B     ; Mufti,250300                          ; pieces                       ;           ; L   
+                                      ; 30012651          ;                 ; M12341_B     ; Mufti,250300                          ; pieces                       ;           ; S   
+                                      ; 30012652          ;                 ; M12341_B     ; Mufti,250300                          ; pieces                       ;           ; M   
+                                      ; 30012653          ;                 ; M12341_B     ; Mufti,250300                          ; pieces                       ;           ; L   
 
-                                       ; 30012661          ;                 ; M12341_W     ; Mufti,250300                          ; pieces                       ;           ; S   
-                                       ; 30012662          ;                 ; M12341_W     ; Mufti,250300                          ; pieces                       ;           ; M   
-                                       ; 30012663          ;                 ; M12341_W     ; Mufti,250300                          ; pieces                       ;           ; L   
+                                      ; 30012661          ;                 ; M12341_W     ; Mufti,250300                          ; pieces                       ;           ; S   
+                                      ; 30012662          ;                 ; M12341_W     ; Mufti,250300                          ; pieces                       ;           ; M   
+                                      ; 30012663          ;                 ; M12341_W     ; Mufti,250300                          ; pieces                       ;           ; L   
                                        
                                        
                                        

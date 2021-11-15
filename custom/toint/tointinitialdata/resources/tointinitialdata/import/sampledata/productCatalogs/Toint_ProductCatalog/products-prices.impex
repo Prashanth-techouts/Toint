@@ -12,4 +12,14 @@ $prices=Europe1prices[translator=de.hybris.platform.europe1.jalo.impex.Europe1Pr
 # Set product approval status to Approved only for those products that have prices.
 $approved=approvalstatus(code)[default='approved']
 
-UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;Europe1PriceFactory_PTG(code)
+UPDATE Product ; code[unique=true] ; $prices ; $approved ; $catalogVersion ; Europe1PriceFactory_PTG(code)
+
+INSERT_UPDATE PriceRow ; productId[unique=true] ; unit(code[unique=true,default=pieces]) ; currency(isocode)[unique=true] ; price ; minqtd ; unitFactor ; net  
+                       ; 30012461               ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
+                       ; 30012462               ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
+                       ; 30012463               ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
+                       
+                       ; 30012451               ; pieces                                 ; INR                            ; 1300  ; 1      ; 1          ; false
+                       ; 30012452               ; pieces                                 ; INR                            ; 1300  ; 1      ; 1          ; false
+                       ; 30012453               ; pieces                                 ; INR                            ; 1300  ; 1      ; 1          ; false
+                       

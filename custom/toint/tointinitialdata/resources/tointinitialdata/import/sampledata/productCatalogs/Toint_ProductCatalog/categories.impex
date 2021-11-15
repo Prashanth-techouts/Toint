@@ -16,20 +16,18 @@ INSERT_UPDATE Category ; code[unique=true] ; $catalogVersion ; supercategories(c
                        ; categories        ;                 ;                                       
                        ; collections       ;                 ;                                       
                        ; clothes           ;                 ; categories                            
-                       ; shirts            ;                 ; clothes                  
-                       ; tshirts           ;                 ; clothes                          
+                       ; accessories       ;                 ; categories                            
+                       ; shirts            ;                 ; clothes                               
+                       ; tshirts           ;                 ; clothes                               
+                       ; jeans             ;                 ; clothes                               
+                       ; jackets           ;                 ; clothes                               
+                       ; watches           ;                 ; accessories                           
+                       ; sunglasses        ;                 ; accessories                           
                        ; brands            ;                 ;                                       
                        ; Aero              ;                 ; brands                                
                        ; Levis             ;                 ; brands                                
                        ; Mufti             ;                 ; brands                                
-
-INSERT_UPDATE Category ; code[unique=true] ; $catalogVersion ; allowedPrincipals(uid)[default='customergroup']
-                       ; 250000            ;                 ;                                                ;  
-                       ; 250100            ;                 ;                                                
-                       ; 250300            ;                 ;                                                
-# Insert Category Structure
-INSERT_UPDATE CategoryCategoryRelation ; $categories ; $supercategories
-                                       ; 250000      ; categories      ;  
-                                       ; 250300      ; 250000          ;  
-                                       ; 250100      ; 250000          ;  
-
+                       ; Gap               ;                 ; brands                                
+                       ; Zara              ;                 ; brands                                
+                       ; Fossil            ;                 ; brands                                
+                       ; Rayban            ;                 ; brands                                
