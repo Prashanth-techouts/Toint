@@ -15,11 +15,41 @@ $approved=approvalstatus(code)[default='approved']
 UPDATE Product ; code[unique=true] ; $prices ; $approved ; $catalogVersion ; Europe1PriceFactory_PTG(code)
 
 INSERT_UPDATE PriceRow ; productId[unique=true] ; unit(code[unique=true,default=pieces]) ; currency(isocode)[unique=true] ; price ; minqtd ; unitFactor ; net  
-                       ; 30012461               ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
-                       ; 30012462               ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
-                       ; 30012463               ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
-                       
-                       ; 30012451               ; pieces                                 ; INR                            ; 1300  ; 1      ; 1          ; false
-                       ; 30012452               ; pieces                                 ; INR                            ; 1300  ; 1      ; 1          ; false
-                       ; 30012453               ; pieces                                 ; INR                            ; 1300  ; 1      ; 1          ; false
+#shirts                
+                       ; M12311                 ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
+                       ; M12312                 ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
+                       ; M12313                 ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
+                       ; M12314                 ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
+                       ; M12315                 ; pieces                                 ; INR                            ; 1500  ; 1      ; 1          ; false
+
+#tshirts               
+                       ; M12321                 ; pieces                                 ; INR                            ; 1000  ; 1      ; 1          ; false
+                       ; M12322                 ; pieces                                 ; INR                            ; 1000  ; 1      ; 1          ; false
+                       ; M12323                 ; pieces                                 ; INR                            ; 1000  ; 1      ; 1          ; false
+                       ; M12324                 ; pieces                                 ; INR                            ; 1000  ; 1      ; 1          ; false
+                       ; M12325                 ; pieces                                 ; INR                            ; 1000  ; 1      ; 1          ; false
+#jeans                       
+                       ; M12331                 ; pieces                                 ; INR                            ; 2000  ; 1      ; 1          ; false
+                       ; M12332                 ; pieces                                 ; INR                            ; 2000  ; 1      ; 1          ; false
+                       ; M12333                 ; pieces                                 ; INR                            ; 2000  ; 1      ; 1          ; false
+                       ; M12334                 ; pieces                                 ; INR                            ; 2000  ; 1      ; 1          ; false
+                       ; M12335                 ; pieces                                 ; INR                            ; 2000  ; 1      ; 1          ; false
+#jackets               
+                       ; M12341                 ; pieces                                 ; INR                            ; 2500  ; 1      ; 1          ; false
+                       ; M12342                 ; pieces                                 ; INR                            ; 2500  ; 1      ; 1          ; false
+                       ; M12343                 ; pieces                                 ; INR                            ; 2500  ; 1      ; 1          ; false
+                       ; M12344                 ; pieces                                 ; INR                            ; 2500  ; 1      ; 1          ; false
+                       ; M12345                 ; pieces                                 ; INR                            ; 2500  ; 1      ; 1          ; false
+#watches               
+                       ; M45611                 ; pieces                                 ; INR                            ; 8000  ; 1      ; 1          ; false
+                       ; M45612                 ; pieces                                 ; INR                            ; 8000  ; 1      ; 1          ; false
+                       ; M45613                 ; pieces                                 ; INR                            ; 8000  ; 1      ; 1          ; false
+                       ; M45614                 ; pieces                                 ; INR                            ; 8000  ; 1      ; 1          ; false
+                       ; M45615                 ; pieces                                 ; INR                            ; 8000  ; 1      ; 1          ; false
+#sunglasses            
+                       ; M45621                 ; pieces                                 ; INR                            ; 5000  ; 1      ; 1          ; false
+                       ; M45622                 ; pieces                                 ; INR                            ; 5000  ; 1      ; 1          ; false
+                       ; M45623                 ; pieces                                 ; INR                            ; 5000  ; 1      ; 1          ; false
+                       ; M45624                 ; pieces                                 ; INR                            ; 5000  ; 1      ; 1          ; false
+                       ; M45625                 ; pieces                                 ; INR                            ; 5000  ; 1      ; 1          ; false
                        

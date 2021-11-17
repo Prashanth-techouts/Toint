@@ -56,4 +56,6 @@ public class HomePageController extends AbstractPageController
 	{
 		storeContentPageTitleInModel(model, getPageTitleResolver().resolveHomePageTitle(cmsPage.getTitle()));
 	}
+
+
 }

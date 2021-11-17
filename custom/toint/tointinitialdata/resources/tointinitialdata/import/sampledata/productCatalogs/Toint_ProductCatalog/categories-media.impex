@@ -15,13 +15,22 @@ $logos=logo(code, $catalogVersion)
 $siteResource=jar:org.toint.initialdata.setup.InitialDataSystemSetup&/tointinitialdata/import/sampledata/productCatalogs/$productCatalog
 
 # Import Category Media
-INSERT_UPDATE Media ; mediaFormat(qualifier) ; code[unique=true] ; $media                                 ; mime[default='image/jpeg'] ; $catalogVersion ; folder(qualifier)
-                    ; 96Wx96H                ; brand-logo-Aero   ; $siteResource/images/96Wx96H/aero.jpg  ;                            ;                 ; images           
-                    ; 96Wx96H                ; brand-logo-Levis  ; $siteResource/images/96Wx96H/levis.jpg ;                            ;                 ; images           
-                    ; 96Wx96H                ; brand-logo-Mufti  ; $siteResource/images/96Wx96H/mufti.jpg ;                            ;                 ; images           
+INSERT_UPDATE Media ; mediaFormat(qualifier) ; code[unique=true] ; $media                                  ; mime[default='image/jpeg'] ; $catalogVersion ; folder(qualifier)
+                    ; 96Wx96H                ; brand-logo-Aero   ; $siteResource/images/96Wx96H/aero.jpg   ;                            ;                 ; images           
+                    ; 96Wx96H                ; brand-logo-Levis  ; $siteResource/images/96Wx96H/levis.jpg  ;                            ;                 ; images           
+                    ; 96Wx96H                ; brand-logo-Mufti  ; $siteResource/images/96Wx96H/mufti.jpg  ;                            ;                 ; images           
+                    ; 96Wx96H                ; brand-logo-Gap    ; $siteResource/images/96Wx96H/gap.jpg    ;                            ;                 ; images           
+                    ; 96Wx96H                ; brand-logo-Zara   ; $siteResource/images/96Wx96H/zara.jpg   ;                            ;                 ; images           
+                    ; 96Wx96H                ; brand-logo-Fossil ; $siteResource/images/96Wx96H/fossil.jpg ;                            ;                 ; images           
+                    ; 96Wx96H                ; brand-logo-Rayban ; $siteResource/images/96Wx96H/rayban.jpg ;                            ;                 ; images           
 
 # Update Categories with medias
 UPDATE Category ; code[unique=true] ; $picture ; $logos           ; $catalogVersion
                 ; Aero              ;          ; brand-logo-Aero  ;                
                 ; Levis             ;          ; brand-logo-Levis ;                
                 ; Mufti             ;          ; brand-logo-Mufti ;                
+                ; Gap               ;          ; brand-logo-Gap ;                
+                ; Zara              ;          ; brand-logo-Zara ;                
+                ; Fossil            ;          ; brand-logo-Fossil ;                
+                ; Rayban            ;          ; brand-logo-Rayban ;                
+                
